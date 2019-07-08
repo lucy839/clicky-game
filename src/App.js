@@ -1,14 +1,14 @@
 import React from "react";
-import Game from "./Game";
+import Game from "./components/Game/Game";
 // import NavBar from "./page/navbar.js";
-import './App.css';
+// import './App.css';
 
 function App() {
   return(
-  <div>
+
 
     <Game />
-  </div>
+  
   );
 }
 

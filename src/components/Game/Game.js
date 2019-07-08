@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import Card from "./components/Card";
-import Characters from "./images.json"
-import NavBar from "./components/NavBar/index.js";
-
+import Card from "../Card/index";
+import Characters from "../../images.json"
+import NavBar from "../NavBar/index";
+import "./style.css";
 
 class Game extends Component {
     state = {
         score: 0,
         characters: Characters,
         selectedChar: [],
-        message:"Click an image to begin!",
-        topScore:0
+        message: "Click an image to begin!",
+        topScore: 0
     };
 
     handleClick = event => {
@@ -19,8 +19,8 @@ class Game extends Component {
             this.state.selectedChar.indexOf(currentChar) > -1;
         if (alreadyClicked) {
             console.log("hi");
-            if(this.state.score>this.state.topScore){
-                this.setState({topScore:this.state.score})
+            if (this.state.score > this.state.topScore) {
+                this.setState({ topScore: this.state.score })
             }
             this.setState(
                 {
@@ -52,17 +52,28 @@ class Game extends Component {
             <div>
                 <NavBar
                     score={this.state.score}
-                    message ={this.state.message}
-                    topScore ={this.state.topScore}
+                    message={this.state.message}
+                    topScore={this.state.topScore}
                 />
-                <div className="jumbotron">
+                <header class ="header">
                     <h1>Clicky Game!</h1>
-                    <p>Click on an image to earn points, but don't click on any more than once</p>
-                </div>
+                    <h2>Click on an image to earn points, but don't click on any more than once</h2>
+                </header>
+                <main class ="container">
                 <div className="row">
-                    {Characters.map(character => <Card src={character.image} key={character.id} id={character.id} alt={character.name} endGame={this.endGame} handleClick={this.handleClick} score={this.state.score} />)}
+                {Characters.map(character => 
+                    <Card src={character.image} key={character.id} id={character.id} 
+                    alt={character.name} endGame={this.endGame} handleClick={this.handleClick} 
+                    score={this.state.score} />)}
                 </div>
-                <footer>Clicky Game!</footer>
+                </main>
+            
+               
+                <footer class="footer">
+                    <div class="bottom">
+                    2019 Youngju Lucy Lee | <a href= "https://github.com/lucy839/ScrapeAllNews.git">GitHub </a>
+                    </div>
+                </footer>
             </div>
         );
     }

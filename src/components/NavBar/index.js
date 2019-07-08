@@ -16,8 +16,8 @@ function NavBar(prop) {
                 </li>
             </ul>
 
-            {/* <span class="navbar-brand mb-0 h1">{prop.message}</span>
-            <span class="navbar-brand mb-0 h1">{prop.score}|{prop.topScore}</span> */}
+                {/* <span class="navbar-brand mb-0 h1">{prop.message}</span>
+                <span class="navbar-brand mb-0 h1">{prop.score}|{prop.topScore}</span> */}
         </nav>
     );
 }

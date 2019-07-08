@@ -1,19 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .navbar {
     background: #5133a4;
-    min-height: 70px;
+    min-height: 86px;
     position: fixed;
     width: 100%;
     color: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    z-index: 99;
+    white-space: nowrap;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    padding:0%;
   }
-  .brand{
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+  /* .brand{
     display: inline-block;
     padding: 26px 0;
     width: 33.3%;
     text-align: center;
-  }
+  } */
   .navbar li{
     display: inline-block;
-    padding: 26px 0;
+    padding: 26 0;
     width: 33.3%;
     text-align: center;
+    /* margin:0%; */
   }
+ 
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    /* height:auto%; */
+    /* min-height: 70px; */
+}
