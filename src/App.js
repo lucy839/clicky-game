@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "./page/page.js";
+import Game from "./Game";
 // import NavBar from "./page/navbar.js";
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return(
   <div>
 
-    <Page />
+    <Game />
   </div>
   );
 }

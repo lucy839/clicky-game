@@ -1,0 +1,19 @@
+.navbar {
+    background: #5133a4;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+  }
+  .brand{
+    display: inline-block;
+    padding: 26px 0;
+    width: 33.3%;
+    text-align: center;
+  }
+  .navbar li{
+    display: inline-block;
+    padding: 26px 0;
+    width: 33.3%;
+    text-align: center;
+  }
