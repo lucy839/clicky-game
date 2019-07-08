@@ -71,7 +71,7 @@ class Game extends Component {
                
                 <footer class="footer">
                     <div class="bottom">
-                    2019 Youngju Lucy Lee | <a href= "https://github.com/lucy839/ScrapeAllNews.git">GitHub </a>
+                    2019 Youngju Lucy Lee | <a href= "https://github.com/lucy839/clicky-game">GitHub </a>
                     </div>
                 </footer>
             </div>

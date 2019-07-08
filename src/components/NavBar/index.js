@@ -12,12 +12,9 @@ function NavBar(prop) {
                 {prop.message}
                 </li>
                 <li>
-                {prop.score}|{prop.topScore}
+                Score : {prop.score} | Top Score : {prop.topScore}
                 </li>
             </ul>
-
-                {/* <span class="navbar-brand mb-0 h1">{prop.message}</span>
-                <span class="navbar-brand mb-0 h1">{prop.score}|{prop.topScore}</span> */}
         </nav>
     );
 }
