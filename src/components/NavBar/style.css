@@ -1,10 +1,10 @@
 *{
-    box-sizing: border-box;
-    font-family: sans-serif;
-
-        font-family: 'Mountains of Christmas', cursive;
-
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Mountains of Christmas', cursive;
 }
+
+/* Navbar */
 .navbar {
     background: #5133a4;
     min-height: 86px;
@@ -17,54 +17,42 @@
     font-size: calc(10px + 14 * (100vw - 320px)/ 800);
     padding:0%;
   }
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 900;
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
 }
-  /* .brand{
-    display: inline-block;
-    padding: 26px 0;
-    width: 33.3%;
-    text-align: center;
-  } */
-  .navbar li{
-    display: inline-block;
-    padding: 26 0;
-    width: 33.3%;
-    text-align: center;
-    /* margin:0%; */
-  }
- 
+.navbar li{
+  display: inline-block;
+  padding: 26 0;
+  width: 33.3%;
+  text-align: center;
+}
 .navbar ul {
     margin: 0;
     padding: 0;
     width:100%;
-    /* height:auto%; */
-    /* min-height: 70px; */
 }
 .fas .fa-gamepad{
     color:white;
+}
+
+/* When incorrect, apply animation name wrong for 0.5 seconds */
+.incorrect{
+  animation-name: wrong ;
+  animation-duration: 0.5s;
 }
 @keyframes wrong {
     from { color:red;}
     to {color:white}
   }
-.incorrect{
-    /* color:red; */
-    animation-name: wrong ;
-    animation-duration: 0.5s;
-    
-    /* animation-iteration-count: infinite; */
-}
 
+/* When correct, apply animation name correct for 0.5 seconds */
 @keyframes correct {
     from { color:green;}
     to {color:white}
   }
 .correct{
-    /* color:red; */
     animation-name: correct;
     animation-duration: 0.5s;
-    /* animation-iteration-count: infinite; */
 }
