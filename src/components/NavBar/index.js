@@ -1,6 +1,8 @@
+// Using React and applying style.css
 import React from "react";
 import "./style.css";
 
+// Function that set up navbar with brand, message, and scores with prop parameter received
 function NavBar(prop) {
     return (
         <nav class="navbar">
@@ -15,10 +17,9 @@ function NavBar(prop) {
                 Score : {prop.score} | Top Score : {prop.topScore}
                 </li>
             </ul>
-        </nav>
-        
+        </nav> 
     );
-    
 }
 
+// Export NavBar
 export default NavBar;
