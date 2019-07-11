@@ -1,6 +1,8 @@
+// Using React and applying style.css
 import React from "react";
 import "./style.css";
 
+// Create each Card with this attributes
 function Card(props) {
     return (
         <div className="col-md-3">
@@ -11,4 +13,5 @@ function Card(props) {
     );
 }
 
+// Export Card out
 export default Card;
