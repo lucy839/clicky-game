@@ -43,3 +43,28 @@
     /* height:auto%; */
     /* min-height: 70px; */
 }
+.fas .fa-gamepad{
+    color:white;
+}
+@keyframes wrong {
+    from { color:red;}
+    to {color:white}
+  }
+.incorrect{
+    /* color:red; */
+    animation-name: wrong ;
+    animation-duration: 0.5s;
+    
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes correct {
+    from { color:green;}
+    to {color:white}
+  }
+.correct{
+    /* color:red; */
+    animation-name: correct;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: infinite; */
+}
