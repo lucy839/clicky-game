@@ -6,7 +6,7 @@
 - click the image, but not the one that you already clicked.
 
 ## Demo
-- ![Alt text](public/demo.png "demo")
+- ![Alt text](public/demo.png?raw=true  "demo")
 
 ## Installation
 - To run the application locally, first clone this repository with the following command.
