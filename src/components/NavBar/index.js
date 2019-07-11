@@ -2,13 +2,6 @@ import React from "react";
 import "./style.css";
 
 function NavBar(prop) {
-    // var className = '';
-    // if (prop.correct){
-    //     className = 'correct';
-  
-    // }else {
-    //     className = 'incorrect';
-    // }
     return (
         <nav class="navbar">
             <ul>
