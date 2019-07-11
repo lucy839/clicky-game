@@ -2,7 +2,7 @@
 import React from "react";
 import "./style.css";
 
-// Function that creates each Card with attributes
+// Function that creates each Card with attributes using props parameter received
 function Card(props) {
     return (
         <div className="col-md-3">
