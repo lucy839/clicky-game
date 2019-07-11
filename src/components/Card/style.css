@@ -1,35 +1,27 @@
+/* Each Card */
 .card {
-    /* background-size: cover;
-    background-position: center;
-    background-clip: content-box;
-    border: 6px solid white;
-    height: 200px;
-    width: 200px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    position: relative;
-    margin: 0 auto;
-    margin-top: 30px; */
+  background-size: cover;
+  background-position: 50%;
+  height: 170px;
+  width: 170px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 5px solid #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+  cursor: pointer;
+  padding:2%;
+}
 
-    background-size: cover;
-    background-position: 50%;
-    height: 170px;
-    width: 170px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border: 5px solid #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-    cursor: pointer;
-    padding:2%;
-    /* margin-bottom:3%; */
-  }
-  .card:hover{
-    transform: scale(1.1);
-  }
+/* Enlarge card when hovered */
+.card:hover{
+  transform: scale(1.1);
+}
+
+/* Image inside card */
 img {
     height: 150px;
     width:150px;
-
 }
 
   
